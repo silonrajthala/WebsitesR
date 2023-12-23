@@ -1,0 +1,69 @@
+body {
+  background-color: whitesmoke;
+}
+
+.about-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  width: auto;
+  height: 100dvh;
+}
+
+.about-content {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 50px;
+}
+.image-about {
+  background-image: url("../../images/about.png");
+  background-size: cover;
+  border-radius: 20px;
+  z-index: -1;
+}
+.text-about {
+  height: 500px; /* Set the desired height */
+}
+.text-about h1 {
+  color: blue;
+}
+.text-about p {
+  font-size: 20px;
+  font-family: "Inter";
+}
+
+@media screen and (max-width: 679px) {
+  .about-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .about-content {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .image-about {
+    background-image: url("../../images/about.png");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    position: relative;
+    width: auto;
+    height: 350px;
+  }
+  .text-about {
+    /* Set the desired height */
+    padding: 20px;
+  }
+  .text-about h1 {
+    color: blue;
+  }
+  .text-about h2 {
+    font-family: "Inter";
+  }
+  .text-about p {
+    font-size: 15px;
+    font-family: "Inter";
+  }
+}

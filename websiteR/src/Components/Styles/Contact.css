@@ -1,0 +1,200 @@
+.contact-container {
+  padding-left: 80px;
+  padding-right: 80px;
+  display: flex;
+  flex-direction: row;
+  /* display: flex;
+    flex-direction: row; */
+}
+.contact-left {
+  width: 50%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-left span {
+  padding-top: 20px;
+  display: flex;
+  position: relative; /* Container for absolute positioning */
+  margin: 5px;
+}
+
+.contact-left span a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50px;
+  padding: 15px;
+  transition: width 0.5s;
+  text-decoration: none; /* Add this line to remove default underline */
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+
+/* Text content */
+.contact-left span::after {
+  content: attr(data-text); /* Get text from data attribute */
+  position: absolute;
+  top: 50%;
+  left: 70px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 2s ease;
+}
+
+/* Show text on hover */
+.contact-left span:hover::after {
+  opacity: 1;
+  font-size: 30px;
+}
+
+/* Hover effect */
+.contact-left span:hover a {
+  width: 170px;
+}
+
+.contact-right {
+  width: 50%;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+}
+.contact-right h1 {
+  color: blue;
+}
+.contact-right h3 {
+  position: relative;
+  top: -85px;
+  color: darkblue;
+  font-size: 65px;
+}
+
+.contact-right span {
+  padding-top: 20px;
+  display: flex;
+  position: relative; /* Container for absolute positioning */
+  margin: 5px;
+}
+.contact-right span a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50px;
+  padding: 15px;
+  transition: width 0.5s;
+  text-decoration: none; /* Add this line to remove default underline */
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+}
+.contact-right span::after {
+  content: attr(data-text); /* Get text from data attribute */
+  position: absolute;
+  top: 50%;
+  left: 70px; /* Adjust the left position as needed */
+  transform: translateY(-50%);
+  opacity: 0; /* Initially hidden */
+  transition: opacity 2s ease;
+}
+
+/* Show text on hover */
+.contact-right span:hover::after {
+  opacity: 1;
+  font-size: 25px;
+}
+
+/* Hover effect */
+.contact-right span:hover a {
+  width: 450px;
+}
+.email-link {
+  cursor: text;
+}
+
+@media screen and (max-width: 679px) {
+  .contact-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    /* display: flex;
+      flex-direction: row; */
+  }
+  .contact-left {
+    width: 50%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-left span {
+    padding-top: 10px;
+    display: flex;
+    position: relative; /* Container for absolute positioning */
+    margin: 5px;
+  }
+
+  .contact-left span a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    padding: 15px;
+    text-decoration: none; /* Add this line to remove default underline */
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  }
+
+  /* Text content */
+  .contact-left span::after {
+    display: none;
+  }
+  
+  .contact-left span:hover a {
+    display: block;
+  }
+
+  .contact-right {
+    width: 50%;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  .contact-right h1 {
+    color: blue;
+  }
+  .contact-right h3 {
+    position: relative;
+    top: -85px;
+    color: darkblue;
+    font-size: 65px;
+  }
+
+  .contact-right span {
+    padding-top: 20px;
+    display: flex;
+    position: relative; /* Container for absolute positioning */
+    margin: 5px;
+  }
+  .contact-right span a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50px;
+    padding: 15px;
+    text-decoration: none; /* Add this line to remove default underline */
+    margin-bottom: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+  }
+  .contact-right span::after {
+    display: none;
+  }
+  
+  .contact-right span:hover a {
+    display: block;
+  }
+}

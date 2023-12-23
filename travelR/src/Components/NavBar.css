@@ -1,0 +1,31 @@
+#NavBar{
+    height:80px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+position: fixed;
+
+}
+#NavBar li{
+    padding:0px 30px;
+    font-size: larger;
+    font-weight: bolder;
+    color:#fff;
+    text-shadow: 2px 2px 4px black;
+
+}
+#NavBar :hover{
+    color: #181D50;
+    cursor: pointer;
+    
+}
+/* #NavBar img{
+    height: 50px;
+    background-color: transparent;
+    background-image: url('../../public/assets/images/logo.png');
+    background-size: cover;
+    z-index: 1;
+} */

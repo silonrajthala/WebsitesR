@@ -1,0 +1,124 @@
+body {
+  background-color: whitesmoke;
+}
+
+.home-container {
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+  /* display: flex;
+    flex-direction: row; */
+    width: auto;
+}
+.hero-content {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+}
+.hero-text {
+  width: 50%;
+  font-family: "Inter";
+}
+.hero-text h1 {
+  font-weight: bolder;
+  font-size: 60px;
+}
+.hero-text p {
+  font-size: 25px;
+}
+.hero-image {
+  padding: 20px;
+  background-image: url("../../images/hero.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #2d2e32;
+  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  position: relative;
+  transition: all 1s ease-in-out;
+  width: 35rem;
+  z-index: -1;
+}
+.skills {
+  font-size: 30px;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  padding-left: 50px;
+}
+
+.logo img {
+  padding-left: 20px;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth 
+    animation */
+  cursor: pointer;
+}
+.logo img:hover {
+  transform: scale(
+    1.4
+  ); /* Scale the icon on hover to create a magnifying effect */
+}
+@media screen and (max-width: 679px) {
+  .home-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hero-image {
+    padding: 20px;
+    background-image: url("../../images/hero.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #2d2e32;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    position: relative;
+    transition: all 1s ease-in-out;
+    height: 400px;
+    z-index: -1;
+    width: auto;
+    /*order: -1;*/
+  }
+
+  .hero-text {
+    width: auto;
+    padding: 20px;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align hero text to the bottom */
+  }
+
+  .hero-text h1 {
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .skills {
+    padding: 20px;
+    font-size: 15px;
+    font-family: "Inter";
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    padding: 20px;
+  }
+  .logo img {
+    padding: 20px;
+    cursor: pointer;
+  }
+}
