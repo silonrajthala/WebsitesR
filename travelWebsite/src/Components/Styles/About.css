@@ -1,0 +1,72 @@
+#about {
+  padding-top: 50px;
+  padding-left:30px;
+  height: auto;
+}
+#about h1{
+  color:#5f9df7;
+}
+.about-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+  font-family: "Inter";
+
+}
+.about-1 {
+  width: 33%;
+}
+.about-2 {
+  width: 33%;
+}
+.about-3 {
+  width: 33%;
+}
+.about-SUV,
+.about-Jeep,
+.about-Cab,
+.about-bike {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto; 
+  max-width: 100%;
+
+
+}
+.about-SUV img,
+.about-Jeep img,
+.about-Cab img,
+.about-bike img  {
+  height: 200px;
+  width: 250px;
+}
+.about-SUV div,
+.about-Jeep div,
+.about-Cab div,
+.about-bike div  {
+  padding: 0px 20px 10px 25px;
+    display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+@media screen and (max-width:679px) {
+  .about-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+  }
+  .about-1,
+  .about-2,
+  .about-3 {
+    width: auto;
+  }
+  
+}

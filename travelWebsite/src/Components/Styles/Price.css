@@ -1,0 +1,105 @@
+#price {
+  padding-top: 50px;
+  height: auto;
+}
+#price h1 {
+  color: #5f9df7;
+}
+.price-container {
+  padding: 0px 40px;
+}
+.price-intro {
+  padding: 50px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.price-intro1,
+.price-intro2{
+    width: 50%;
+    font-family: "Inter";
+
+}
+
+.Vehicles,
+.event,
+.hotel {
+  font-family: "Inter";
+
+  padding: 20px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+.suv,
+.jeep,
+.cab,
+.bike,
+.bunji,
+.safari,
+.swing,
+.trek,
+.luxary,
+.motel,
+.resort,
+.suits,
+.inns,
+.homestay,
+.budgethotel,
+.rafting {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+.suv img,
+.jeep img,
+.cab img,
+.bike img {
+  height: 200px;
+  width: 400px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.luxary img,
+.motel img,
+.resort img,
+.suits img,
+.inns img,
+.homestay img,
+.budgethotel img {
+  height: 200px;
+  width: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.bunji img,
+.safari img,
+.swing img,
+.trek img,
+.rafting img {
+  height: 200px;
+  width: 250px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+@media screen and (max-width:679px) {
+    
+    .price-intro {
+        padding: 50px;
+      
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .price-intro1,
+      .price-intro2{
+        width: auto;
+          font-family: "Inter";
+      }
+}

@@ -1,0 +1,64 @@
+#explore {
+  padding: 50px 0 0 20px;
+  height: auto;
+}
+#explore h1{
+  color:#5f9df7;
+
+}
+.explore-container {
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.explore-intro-1,
+.explore-intro-2 {
+  width: 50%;
+  font-family: "Inter";
+}
+.religion,
+.heritage,
+.todo {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  overflow-x: auto;
+}
+.religion div,
+.heritage div,
+.todo div {
+  background-color: #fff;
+  border-radius: 20px;
+  font-family: "Inter";
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+}
+.religion img,
+.heritage img,
+.todo img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 200px;
+  width: 200px;
+}
+.heritage div {
+  width: 400px;
+}
+.heritage img {
+  height: 250px;
+  width: 400px;
+}
+@media screen and (max-width:679px) {
+  .explore-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .explore-intro-1,
+  .explore-intro-2 {
+    width: auto;
+  }
+}

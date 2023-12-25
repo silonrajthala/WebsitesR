@@ -6,91 +6,28 @@ height: 100vh;
 Additional styles */
 }
 
-
-.home-container {
-  height: 700px;
-  background-image: url("../public/assets/images/Home.jpg");
-  background-size: cover;
+body{
+  background-color: whitesmoke;
 }
-.slideshow {
-  animation: slideshowAnimation 25s infinite;
+footer{
+  background-color: rgb(19, 23, 23);
+  height:150px
 }
-
-@keyframes slideshowAnimation {
-  0% {
-    background-image: url("../public/assets/images/Home.jpg");
-  }
-  33.33% {
-    background-image: url("../public/assets/images/Home2.jpeg");
-  }
-  66.66% {
-    background-image: url("../public/assets/images/Home3.png");
-  }
-  100% {
-    background-image: url("../public/assets/images/Home4.jpg");
-  }
-}
-.container-hero {
-  padding-top: 150px;
-  padding-left: 100px;
-  padding-right: 100px;
+footer h1{
+  padding-top: 50px;
   padding-bottom: 50px;
-
-  max-width: 700px;
+  padding-left: 100px;
+  color:whitesmoke;
+  font-family: 'Inter';
+  
 }
-.hero {
-  background-color: rgba(0, 0, 0, 0.4);
-  border-color: black;
-  height: 400px;
-  width: auto;
-  border: 5px solid #333;
-  border-color: #5f9df7;
-  border-radius: 100px 0px;
-  box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.5);
+@media screen {
+  footer h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    color:whitesmoke;
+    font-family: 'Inter';
+    font-size: 20px;
+  }
 }
-.hero:hover {
-  border-color: #181d50;
-}
-.hero-text {
-  padding: 20px 50px;
-}
-.hero-text h1 {
-  color: #5f9df7;
-}
-.hero-text h2 {
-  color: #fff;
-  margin-top: -15px;
-  font-size: 40px;
-}
-.hero-text h3 {
-  color: #fff;
-  font-size: 20px;
-}
-
-.hero-text button {
-  background-color: #181d50;
-  color: #fff;
-  width: 200px;
-  height: 80px;
-  border: 5px solid;
-  font-size: 20px;
-  font-weight: bolder;
-}
-.container-hero2 {
-  width: auto;
-  padding: 20px 100px;
-  height: 200px;
-}
-.detail {
-  max-width: 1250px;
-  max-height: 180px;
-  height: 130px;
-  background-color: #5f9df7;
-  border-radius: 50px;
-  text-align: center;
-  z-index: 1;
-}
-.detail:hover {
-  background-color: #181d50;
-}
-

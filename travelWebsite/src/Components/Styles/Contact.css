@@ -1,0 +1,85 @@
+#contact{
+    padding-top: 50px;
+    height: auto;
+}
+#contact h1{
+    color: #5f9df7;
+}
+.contact-container{
+    padding: 0px 40px;
+
+}
+.contact-intro{
+padding: 50px;
+font-family: 'Inter';
+
+}
+
+.email{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.email-icon{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    justify-items: center;
+    align-items: center;
+
+}
+.email-icon:hover{
+    cursor: pointer;
+}
+
+.email-icon h2{
+position: relative;
+top:-40px;
+left:30px;
+font-size:60px ;
+}
+.email-add h2{
+    position: relative;
+    top:15px;
+    right:-10px;
+}
+
+.call{
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+}
+.call-icon{
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    justify-items: center;
+    align-items: center;
+
+}
+.call-icon:hover{
+    cursor: pointer;
+}
+
+.call-icon h2{
+position: relative;
+top:-40px;
+left:30px;
+font-size:60px ;
+}
+.call-add h2{
+    position: relative;
+    top:15px;
+    right:-10px;
+}
+.contact-info{
+    padding-bottom: 60px;
+}
+@media screen and(max-width:679px){
+  
+}

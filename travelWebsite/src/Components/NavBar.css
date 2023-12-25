@@ -1,26 +1,23 @@
-#NavBar{
-    height:80px;
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-position: fixed;
-
+#NavBar {
+  height: 80px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
 }
-#NavBar li{
-    padding:0px 30px;
-    font-size: larger;
-    font-weight: bolder;
-    color:#fff;
-    text-shadow: 2px 2px 4px black;
-
+#NavBar li {
+  padding: 0px 30px;
+  font-size: larger;
+  font-weight: bolder;
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
 }
-#NavBar :hover{
-    color: #181D50;
-    cursor: pointer;
-    
+#NavBar :hover {
+  color: #181d50;
+  cursor: pointer;
 }
 /* #NavBar img{
     height: 50px;
@@ -29,3 +26,32 @@ position: fixed;
     background-size: cover;
     z-index: 1;
 } */
+#mobile {
+  display: none;
+}
+@media screen and (max-width: 679px) {
+  #NavBar {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    transition: 2s ease-in-out;
+    z-index: 1;
+  }
+  #NavBar li{
+    padding: 20px 50px;
+  }
+  #NavBar.active{
+    right:-900px
+  }
+  #mobile {
+    display: flex;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+  }
+}

@@ -1,0 +1,230 @@
+
+.home-container {
+    height: 700px;
+    background-image: url("../../../public/assets/images/Home.jpg");
+    background-size: cover;
+  }
+  .slideshow {
+    animation: slideshowAnimation 25s infinite;
+  }
+  
+  @keyframes slideshowAnimation {
+    0% {
+      background-image: url("../../../public/assets/images/Home.jpg");
+    }
+    33.33% {
+      background-image: url("../../../public/assets/images/Home2.jpeg");
+    }
+    66.66% {
+      background-image: url("../../../public/assets/images/Home3.png");
+    }
+    100% {
+      background-image: url("../../../public/assets/images/Home4.jpg");
+    }
+  }
+  .container-hero {
+    padding-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+  
+    max-width: 700px;
+  }
+  .hero {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: black;
+    height: 400px;
+    width: auto;
+    border: 5px solid #333;
+    border-color: #5f9df7;
+    border-radius: 100px 0px;
+    box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+  .hero:hover {
+    border-color: #181d50;
+  }
+  .hero-text {
+    padding: 20px 50px;
+  }
+  .hero-text h1 {
+    color: #5f9df7;
+  }
+  .hero-text h2 {
+    color: #fff;
+    margin-top: -15px;
+    font-size: 40px;
+  }
+  .hero-text h3 {
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .hero-text button {
+    background-color: #181d50;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    border: 5px solid;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .container-hero2 {
+    width: auto;
+    padding: 20px 100px;
+    height: 150px;
+  }
+  .detail {
+    display: flex;
+    flex-direction: row;
+    max-width: 1250px;
+    max-height: 180px;
+    height: 130px;
+    background-color: #5f9df7;
+    border-radius: 50px;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; 
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+  }
+  .detail:hover {
+    background-color: #181d50;
+  }
+
+ .detail input{
+    border-radius: 20px;
+    height:40px;
+  }
+
+  .search-button{
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+  }
+  
+  /* App.css */
+
+
+
+.overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog {
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+/* Center the close button */
+.dialog div {
+  padding: 8px 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Optional: Style for the button */
+button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 679px) {
+
+
+
+  .home-container {
+    height: 400px;
+    background-image: url("../../../public/assets/images/Home.jpg");
+    background-size: cover;
+  }
+  .slideshow {
+    animation: slideshowAnimation 25s infinite;
+  }
+  
+  @keyframes slideshowAnimation {
+    0% {
+      background-image: url("../../../public/assets/images/Home.jpg");
+    }
+    33.33% {
+      background-image: url("../../../public/assets/images/Home2.jpeg");
+    }
+    66.66% {
+      background-image: url("../../../public/assets/images/Home3.png");
+    }
+    100% {
+      background-image: url("../../../public/assets/images/Home4.jpg");
+    }
+  }
+  .container-hero {
+    padding-top: 270px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  
+    max-width: 700px;
+  }
+  .hero {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: black;
+    height: 350px;
+    width: auto;
+    border: 5px solid #333;
+    border-color: #5f9df7;
+    border-radius: 40px 0px;
+    box-shadow: 8px 8px 10px -5px rgba(0, 0, 0, 0.5);
+  }
+  .hero-text {
+    padding: 10px 30px;
+  }
+  .hero-text h1 {
+    color: #5f9df7;
+  }
+  .hero-text h2 {
+    color: #fff;
+    margin-top: -15px;
+    font-size: 30px;
+  }
+  .hero-text h3 {
+    color: #fff;
+    font-size: 15px;
+  }
+  
+  .hero-text button {
+    background-color: #181d50;
+    color: #fff;
+    width: 200px;
+    height: 80px;
+    border: 5px solid;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .container-hero2 {
+    width: auto;
+    padding: 20px 100px;
+    height: auto;
+  }
+  .detail {
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    max-height: 180px;
+    height: auto;
+    background-color: #5f9df7;
+    border-radius: 50px;
+    justify-content: center; /* Horizontally centers the items */
+    align-items: center; 
+  }
+}
+
+  
