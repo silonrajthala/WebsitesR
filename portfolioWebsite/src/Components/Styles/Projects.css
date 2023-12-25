@@ -1,6 +1,91 @@
 .projects-container{
-    height: 100vh;
+    height: auto;
+    background-color: #fff;
+    border-radius: 20px;
+
+
 }
 .projects-container h1{ 
     color:blue;
 }
+.project{
+    padding:50px 20px ;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: auto;
+}
+.project-img{
+    height: 400px;
+    width: 65%;
+
+    min-height: 250px;
+    min-width: 400px;
+    background-image: url("../../images/Project1.png");
+    background-size:cover;
+    background-position: center;
+
+    border-radius: 20px;
+    z-index: 0;
+}
+.project-img-2{
+    height: 400px;
+    width: 65%;
+
+    min-height: 250px;
+    min-width: 400px;
+    background-image: url("../../images/Project2.png");
+    background-size:cover;
+    background-position: center;
+
+    border-radius: 20px;
+    z-index: 0;
+}
+.project-intro{
+    padding:50px;
+    width: 35%;
+    text-align: center;
+    font-family: 'Inter';
+
+}
+.project-intro-head{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.project-intro-body{
+ 
+
+}
+.project-intro-tail{
+    padding: 20px;
+    width:auto;
+    font-size: 25px;
+
+}
+.react{
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+
+
+}
+
+.react div{
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+width: 100px;
+
+}
+.links{
+    padding: 20px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    font-size: 30px;
+    color:black;
+}
+.links a {
+    text-decoration: none; 
+  }

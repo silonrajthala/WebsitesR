@@ -18,6 +18,8 @@ body {
 .image-about {
   background-image: url("../../images/about.png");
   background-size: cover;
+  background-position: center;
+
   border-radius: 20px;
   z-index: -1;
 }
